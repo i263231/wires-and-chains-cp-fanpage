@@ -1,44 +1,214 @@
 /*
-//Name: Muhammad Ali Azam
-//Roll no:26i-3231
-//Section: SE-E
+  Name: Muhammad Ali Azam
+  Roll no: 26i-3231
+  Section: SE-E
 */
 
-body 
-{
-    background-color: #800000;
-    h3
-    {
-        color: #0abdc6;
-        font-size: 20px;
-        font-family: 'Orbitron', sans-serif;
-        text-transform: uppercase;
-    }
-    h1
-    {
-        color: #ffd300;
-        font-family: 'Orbitron', sans-serif;
-        text-transform: uppercase;
-    }
-    p
-    {
-        color: #0abdc6;
-        font-size: 16px;
-        font-family: 'Rajdhani', sans-serif;
-    }
-    button 
-    {
-        background-color: #ffd300;
-        color: #800000;
-        border-radius: 8px;
-    }
-    table, td 
-    {
-        border: 1px solid #0abdc6;
-        color: #0abdc6;
-        font-family: 'Rajdhani', sans-serif;
-        font-size: 16px;
-        padding: 10px;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: #800000;
+  color: #0abdc6;
+  font-family: 'Rajdhani', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  border-bottom: 2px solid #0abdc6;
+  background-color: #5c0000;
+}
+
+.logo {
+  color: #0abdc6;
+  font-size: 22px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #0abdc6;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffd300;
+  border: 1px solid #ffd300;
+  border-radius: 4px;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto;
+  flex: 1;
+}
+
+/* Wireframe Two-Column Layout */
+.hero-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  border: 2px solid #0abdc6;
+  background-color: #6b0000;
+  border-radius: 6px;
+}
+
+.hero-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-left h1 {
+  color: #ffd300;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.image-box {
+  width: 100%;
+  max-width: 480px;
+  border: 2px solid #ffd300;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: #ffd300;
+  color: #800000;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 2px solid #ffd300;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.custom-btn:hover {
+  background-color: #0abdc6;
+  border-color: #0abdc6;
+  color: #5c0000;
+}
+
+.side-btn {
+  width: 100%;
+  max-width: 220px;
+}
+
+.bottom-explore-btn {
+  min-width: 180px;
+}
+
+/* Lore & Table Section */
+.lore-section {
+  margin-top: 35px;
+  padding: 25px;
+  border: 1px solid #0abdc6;
+  background-color: #6b0000;
+  border-radius: 6px;
+}
+
+.lore-section p {
+  color: #0abdc6;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #0abdc6;
+  color: #0abdc6;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  color: #ffd300;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #0abdc6;
+  background-color: #5c0000;
+  font-size: 14px;
+  color: #0abdc6;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero-grid {
+    flex-direction: column;
+  }
+  .side-btn {
+    max-width: 100%;
+  }
+}

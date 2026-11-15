@@ -1,40 +1,92 @@
 <!-- 
-  //Name: Muhammad Ali Azam
-  //Roll no:26i-3231
-  //Section: SE-E 
+  Name: Muhammad Ali Azam
+  Roll no: 26i-3231
+  Section: SE-E 
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wires and Chains | Cyberpunk 2077</title>
+  <!-- Load Orbitron and Rajdhani fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Wires and Chains</title>
 </head>
 <body>
 
-  <h3>Wires and Chains</h3>
-  <h1>Cyberpunk 2077</h1>
-  <img src="C:\Users\Potato\Documents\wires_&_chains_cpfanpage\Images\images.jpg" alt="Game Cover">
-  <p> Explore Night City across Cyberpunk 2077, the Phantom Liberty expansion, and Cyberpunk: Edgerunners.</p>
-  
-  <table>
-    <tr>
-      <td>Maelstrom</td>
-      <td>Watson District</td>
-    </tr>
-    <tr>
-      <td>Valentinos</td>
-      <td>Heywood District</td>
-    </tr> 
-  </table>
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Wires &amp; Chains</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="top-picks.html">Top Picks</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-  <button class="custom-btn" onclick="exploreNightCity()">Jack In</button>
+  <!-- Main Content matching your wireframe sketch -->
+  <main class="container">
+    <section class="hero-grid">
+      
+      <!-- Left Column: Title, Cover Image, Bottom Explore Button -->
+      <div class="hero-left">
+        <h1>Cyberpunk 2077</h1>
+        <div class="image-box">
+          <img src="Images/images.jpg" alt="Cyberpunk 2077 Cover">
+        </div>
+        <button class="custom-btn bottom-explore-btn" onclick="exploreNightCity()">Explore</button>
+      </div>
+
+      <!-- Right Column: Stacked Play and Explore Buttons -->
+      <div class="hero-right">
+        <button class="custom-btn side-btn" onclick="playGame()">Play</button>
+        <a href="#night-city-info" class="custom-btn side-btn link-btn">Explore</a>
+      </div>
+
+    </section>
+
+    <!-- Night City Lore & District Table -->
+    <section id="night-city-info" class="lore-section">
+      <p>Explore Night City across Cyberpunk 2077, the Phantom Liberty expansion, and Cyberpunk: Edgerunners.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Gang / Faction</th>
+            <th>Territory</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maelstrom</td>
+            <td>Watson District</td>
+          </tr>
+          <tr>
+            <td>Valentinos</td>
+            <td>Heywood District</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Wires &amp; Chains | Created by Muhammad Ali Azam (26i-3231)</p>
+  </footer>
 
   <script>
-    function exploreNightCity()
-    {
-      console.log("Jack In button was clicked");
+    function exploreNightCity() {
+      console.log("Explore button was clicked");
       window.alert("Wake up, Samurai! Welcome to Night City.");
+    }
+
+    function playGame() {
+      console.log("Play button was clicked");
+      window.alert("Booting Cyberdeck... Launching Cyberpunk 2077!");
     }
   </script>
 
