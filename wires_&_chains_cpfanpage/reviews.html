@@ -1,0 +1,102 @@
+<!-- 
+  Name: Muhammad Ali Azam
+  Roll no: 26i-3231
+  Section: SE-E 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Wires and Chains</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Consistent Top Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Wires &amp; Chains</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="top-picks.html">Top Picks</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="page-header">
+      <h1>Night City Reviews &amp; Ratings</h1>
+      <p>Verdicts across the base game, the Phantom Liberty expansion, and the Cyberpunk: Edgerunners anime.</p>
+    </section>
+
+    <!-- Three-Card Review Grid -->
+    <section class="cards-grid">
+      <div class="card">
+        <h3>Cyberpunk 2077 (v2.1+)</h3>
+        <p><strong>Score: 9.2 / 10</strong> — Overhauled cyberware, vehicle combat, and deep RPG builds turn Night City into a premier open-world experience.</p>
+        <button class="custom-btn card-btn" onclick="submitVote('Cyberpunk 2077')">Upvote Review</button>
+      </div>
+
+      <div class="card">
+        <h3>Phantom Liberty</h3>
+        <p><strong>Score: 9.6 / 10</strong> — A tense spy-thriller campaign in Dogtown with Idris Elba as Solomon Reed and unforgettable moral choices.</p>
+        <button class="custom-btn card-btn" onclick="submitVote('Phantom Liberty')">Upvote Review</button>
+      </div>
+
+      <div class="card">
+        <h3>Cyberpunk: Edgerunners</h3>
+        <p><strong>Score: 9.8 / 10</strong> — Studio Trigger's visceral, heartbreaking story of David Martinez and Lucy captures the true soul of Night City.</p>
+        <button class="custom-btn card-btn" onclick="submitVote('Cyberpunk: Edgerunners')">Upvote Review</button>
+      </div>
+    </section>
+
+    <!-- Critic & Community Summary Table -->
+    <section class="lore-section">
+      <h2 class="section-title">Release Breakdown</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Format</th>
+            <th>Highlight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cyberpunk 2077</td>
+            <td>Base RPG</td>
+            <td>V &amp; Johnny Silverhand's Main Storyline</td>
+          </tr>
+          <tr>
+            <td>Phantom Liberty</td>
+            <td>Expansion</td>
+            <td>Dogtown District &amp; Relic Skill Tree</td>
+          </tr>
+          <tr>
+            <td>Cyberpunk: Edgerunners</td>
+            <td>Anime Series (10 Episodes)</td>
+            <td>Sandevistan Action &amp; Akira Yamaoka Score</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Wires &amp; Chains | Created by Muhammad Ali Azam (26i-3231)</p>
+  </footer>
+
+  <script>
+    function submitVote(title) {
+      console.log("Upvoted review for: " + title);
+      window.alert("Neural Link Verified: You upvoted " + title + "!");
+    }
+  </script>
+
+</body>
+</html>
