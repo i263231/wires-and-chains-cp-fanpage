@@ -211,4 +211,75 @@ th {
   .side-btn {
     max-width: 100%;
   }
+  /* Top Picks & Subpage Components */
+.page-header {
+  text-align: center;
+  padding: 25px;
+  border: 2px solid #0abdc6;
+  background-color: #6b0000;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #ffd300;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 18px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #6b0000;
+  border: 2px solid #0abdc6;
+  border-radius: 6px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  color: #ffd300;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+.section-title {
+  color: #ffd300;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
